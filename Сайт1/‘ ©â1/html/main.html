@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Machetare cu DIV-uri</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="..\css\style1.css" />
+</head>
+
+<body>
+    <!--  -->
+    <!-- Меню сайта -->
+    <div class="meniu">
+        <!-- Логотип -->
+        <a href="main.html"><img class="name" src="..\img\name1.png" alt="error"></a>
+        <!-- Надписи-сылки в нашем меню -->
+        <div class="divhp">
+            <div class="hp">
+                <a href="category.html">
+                    <p>Категории</p>
+                </a>
+            </div>
+            <div class="hp">
+                <a href="aboutus.html">
+                    <p>Сотрудники</p>
+                </a>
+            </div>
+            <div class="hp">
+                <a href="contacts.html">
+                    <p>Контакты</p>
+                </a>
+            </div>
+
+            <!-- С права в боку от меню -->
+            <div class="sidehp">
+                <div class="hp2">
+                    <p>RU</p>
+                </div>
+                <div class="hp2">
+                    <p>Войти</p>
+                </div>
+                <div class="hp2">
+                    <p>Зарегестрироватся</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Хедер -->
+    <div class="header">
+
+        <!-- Логотип внутри хедера -->
+        <div>
+            <img class="nameofsite" src="..\img\name2.png" alt="">
+        </div>
+
+        <!-- Поисковая строка -->
+        <div>
+
+            <Input class="search" type="search" placeholder="Поиск"></Input>
+
+        </div>
+
+        <!-- Заголовок внутри Хедера -->
+        <div>
+            <h1 class="zagalovok">Интернет Магазин Tornado </h1>
+        </div>
+    </div>
+
+    <!-- Котнейнер совсем что находится внутри сайта. Содержимое -->
+
+    <br><br><br><br>
+    <style>
+        .slider {
+            max-width: 80%;
+            position: relative;
+            margin: auto;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        /* Картинка масштабируется по отношению к родительскому элементу */
+        
+        .slider .item img {
+            /* заполняем картинкой поле с сохранением пропорций */
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border: none !important;
+            box-shadow: none !important;
+        }
+        /* Кнопки вперед и назад */
+        
+        .slider .prev,
+        .slider .next {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+        
+        .slider .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* Фон кнопок вперед и назад при наведении */
+        
+        .slider .prev:hover,
+        .slider .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* надпись */
+        
+        .slideText {
+            position: absolute;
+            color: #fff;
+            font-size: 35px;
+            /* Выравнивание текста горизонтально и по вертикально*/
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            /* Тень текста*/
+            text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+        }
+        /* Кружочки под слайдами */
+        
+        .slider-dots {
+            text-align: center;
+        }
+        
+        .slider-dots_item {
+            cursor: pointer;
+            height: 12px;
+            width: 12px;
+            margin: 0 2px;
+            background-color: #ddd;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active,
+        .slider-dots_item:hover {
+            background-color: #aaa;
+        }
+        /* Анимация слайдов */
+        
+        .slider .item {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+
+    <div class="slider">
+
+        <div class="item" id="slide showing">
+
+            <img src="..\img\panda4.jpg" alt="Первый слайд">
+
+            <div class="slideText">
+                <a style="text-align:center;color:white;" href=""></a>
+            </div>
+
+        </div>
+
+
+
+        <div class="item">
+
+            <img src="..\img\panda2.jpg" alt="Второй слайд">
+
+            <div class="slideText" href="">
+                <a style="text-align:center;color:white;" href=""></a>
+            </div>
+
+        </div>
+
+
+
+        <div class="item">
+
+            <img src="..\img\panda3.jpg" alt="Третий слайд">
+
+            <div class="slideText" href="">
+                <a style="text-align:center;color:white;" href=""></a>
+            </div>
+
+        </div>
+
+
+
+        <div class="item">
+
+            <img src="..\img\panda5.jpg" alt="Четвертый слайд">
+
+            <div class="slideText" href="">
+                <a style="text-align:center;color:white;" href=""></a>
+            </div>
+
+        </div>
+
+
+
+        <div class="item">
+
+            <img src="..\img\panda7.jpeg" alt="Пятый слайд">
+
+            <div class="slideText" href="">
+                <a style="text-align:center;color:white;" href=""></a>
+            </div>
+
+        </div>
+
+
+
+        <a class="prev" onclick="minusSlide()">&#10094;</a>
+
+        <a class="next" onclick="plusSlide()">&#10095;</a>
+
+    </div>
+
+
+
+    <div class="slider-dots">
+
+        <span class="slider-dots_item" onclick="currentxSlide(1)"></span>
+
+        <span class="slider-dots_item" onclick="currentxSlide(2)"></span>
+
+        <span class="slider-dots_item" onclick="currentxSlide(3)"></span>
+
+        <span class="slider-dots_item" onclick="currentxSlide(4)"></span>
+
+        <span class="slider-dots_item" onclick="currentxSlide(5)"></span>
+
+    </div>
+
+
+
+    <script>
+        var slideIndex = 1;
+
+        showSlides(slideIndex);
+
+
+
+
+
+        /* Функция увеличивает индекс на 1, показывает следующй слайд*/
+
+        function plusSlide() {
+
+            showSlides(slideIndex += 1);
+
+        }
+
+
+
+        /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+
+        function minusSlide() {
+
+            showSlides(slideIndex -= 1);
+
+        }
+
+
+
+        /* Устанавливает текущий слайд */
+
+        function currentxSlide(n) {
+
+            showSlides(slideIndex = n);
+
+        }
+
+
+
+        /* Основная функция слайдера */
+
+        function showSlides(n) {
+
+            var i;
+
+            var slides = document.getElementsByClassName("item");
+
+            var dots = document.getElementsByClassName("slider-dots_item");
+
+            if (n > slides.length) {
+
+                slideIndex = 1
+
+            }
+
+            if (n < 1) {
+
+                slideIndex = slides.length
+
+            }
+
+            for (i = 0; i < slides.length; i++) {
+
+                slides[i].style.display = "none";
+
+            }
+
+            for (i = 0; i < dots.length; i++) {
+
+                dots[i].className = dots[i].className.replace(" active", "");
+
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+            dots[slideIndex - 1].className += " active";
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+    <!-- Кнопка -->
+    <!-- <div class="div_knopka">
+            <h1 class="knopka">Следующий >></h1>
+        </div> -->
+
+
+    <!-- 
+        <div class="tile">
+            <div class="cel cal1">
+                <a href=""><img src="imgmenu1.jpg" alt="" class="tileimg1"></a>
+            </div>
+            <div class="cel cal2"><img src="img/menu2" alt="" class="tileimg"></div>
+            <div class="cel cal3"><img src="img/menu3" alt="" class="tileimg"></div>
+            <div class="cel cal4"><img src="menu4" alt="" class="tileimg"></div>
+            <div class="cel cal5"><img src="menu5" alt="" class="tileimg"></div>
+            <div class="cel cal6"><img src="menu6" alt="" class="tileimg"></div>
+        </div>
+ -->
+
+
+
+
+    <!-- ПОдвал сайта -->
+
+    <div class="bottom">
+        <!-- <div class="empty"></div> -->
+        <div class="botname">
+            <br>
+            <h2 style="margin-left: 320px; color: #aba9a9; margin-bottom: 60px;">Дальнейшая навигация по этому сайту считается вашим принятием политики cookie.</h2>
+            <br><br>
+            <h6 class="bottom_name">© 2013-2021 Toate drepturile rezervate</h6>
+            <h6 class="bottom_name">Tornado Click SRL</h6>
+            <h6 class="bottom_name">Operator de date cu caracter personal cu Nr. 0001919</h6>
+            <h6 class="bottom_name">Republica Moldova, mun. Chișinău, str. Alexei Mateevici, MD 2001</h6>
+            <h6 class="bottom_name">IDNO: 1024301643253 I TVA : 0234239</h6>
+
+
+        </div>
+    </div>
+    <div class="divcontacts">
+        <h2 class="contacts">Nmr: +37360551058</h2>
+        <h2 class="contacts">Gmail: woolfix7@gmail.com</h2>
+        <h2 class="contacts">Adres: str.Alexei Mateevici, Unifersity of the State</h2>
+    </div>
+    <div class="divcontacts2">
+        <h2 class="contacts2">Nmr: +37360551058</h2>
+        <h2 class="contacts2">Gmail: woolfix7@gmail.com</h2>
+        <h2 class="contacts2">Adres: str.Alexei Mateevici, Unifersity of the State</h2>
+    </div>
+
+    <img src="..\img\name1.png" alt="" class="btmimg">
+
+
+</body>
+
+</html>
