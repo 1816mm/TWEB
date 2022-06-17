@@ -10,7 +10,7 @@
 <body>
     <!--  -->
     <!-- Меню сайта -->
-    <div class="meniu">
+    <div class="meniu" id="menu">
         <!-- Логотип -->
         <a href="main.html"><img class="name" src="..\img\name1.png" alt="error"></a>
         <!-- Надписи-сылки в нашем меню -->
@@ -43,11 +43,29 @@
                     <p>Зарегестрироватся</p>
                 </div>
             </div>
+            <span class="col v" onclick="change('violet')" ></span>
+            <span class="col r" onclick="change('red')"></span>
+            <span class="col b" onclick="change('black')"></span>
         </div>
     </div>
 
+    <div class="content-area content-area-contacts">
+        <div class="contact_us">
 
+            <h1>Contact us</h1>
 
+            <div class="form_container">
+                    <input type="email" id="email" placeholder="Email">
+                    <br>
+                    <br>
+                    <input type="text" id="message" placeholder="Mesajul">
+                    <br>
+                    <br>
+                    <input type="button" id="submit" value="Send" onclick="send()">
+                    <p id="validationText"></p>
+            </div>
+        </div>
+    </div>
 
     <!-- ПОдвал сайта -->
 
@@ -79,7 +97,8 @@
 
     <img src="..\img\name1.png" alt="" class="btmimg">
 
-
+    <script src="../js/java.js"></script>
+    <script src="../js/jquery.js"></script>
 </body>
 
 </html>
